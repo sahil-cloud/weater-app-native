@@ -26,7 +26,7 @@ export default function Home({route}) {
         city = "indore";
       }
     fetch(
-      `http://api.weatherstack.com/current?access_key=5a8bc988cc973753be8123d951a61b10&query=${city}`
+      `http://api.weatherstack.com/current?access_key=&query=${city}`
     )
       .then((res) => res.json())
       .then((result) => {
@@ -51,7 +51,7 @@ export default function Home({route}) {
       // console.log("yugyusgty");
 
         fetch(
-          `http://api.weatherstack.com/current?access_key=5a8bc988cc973753be8123d951a61b10&query=${location}`
+          `http://api.weatherstack.com/current?access_key=0&query=${location}`
         )
           .then((res) => res.json())
           .then((result) => {
